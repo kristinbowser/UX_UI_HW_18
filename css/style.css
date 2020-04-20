@@ -1,0 +1,39 @@
+.mySkills {
+    display: grid;
+    background-color: #F6C8C9;
+    grid-auto-columns: 100%;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "myUxTools"
+    "skillsGrid"
+    "toolList";
+}
+
+#myUxTools {
+    grid-area: myUxTools;
+}
+
+#skillsGrid {
+    grid-area: skillsGrid;
+    width: 100%;
+    justify-self: center;
+}
+
+#toolList {
+    grid-area: toolList;
+    justify-self: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+    padding-right: 7px;
+    font-family: 'Aleo', sans-serif;
+    color: #01989E;
+
