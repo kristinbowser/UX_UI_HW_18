@@ -6,40 +6,28 @@ h1 {
     font-family: 'Shrikhand', cursive, serif;
     color: #01989E;
     font-size: 35pt;
-    padding-left: 30px;
+    padding-left: 200px;
+}
+#myUxTools {
+
 }
 
 .mySkills {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background-color: #F6C8C9;
-    grid-auto-columns: 1fr
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas: 
-    "myUxTools"
-    "skillsGrid"
-    "toolList"
-    ;
-}
-
-#myUxTools {
-    grid-area: myUxTools;
 }
 
 .skillsGrid {
-    grid-area: skillsGrid;
     text-align: center;
-}
-
-#toolList {
-    grid-area: toolList;
-    justify-self: center;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-left: 300px;
     overflow: hidden;
+    
   }
   
   li {
@@ -51,9 +39,11 @@ ul {
   }
 
 #mySkillsPic {
-    max-width: 800px;
-    padding-bottom: 30px;
+    max-width: 700px;
+    margin-bottom: 30px;
     margin-top: -30px;
+    padding-bottom: 8px;
+    border: 5px solid #E73D2C;
 }
 
 #caseStudy1 {
@@ -64,8 +54,8 @@ ul {
     "kitten" "case1";
     grid-gap: 30px;
     background-color: #F6C8C9;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -73,8 +63,9 @@ ul {
 #kitten {
     max-height: 300px;
     grid-area: "kitten";
-    padding-left: 100px;
+    margin-left: 70px;
     margin-top: 30px;
+    box-shadow: 1px 1px 5px #e73d2c;
 }
 
 #case1 {
@@ -94,8 +85,8 @@ ul {
     "case2" "coffee";
     grid-gap: 30px;
     background-color: #F6C8C9;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -113,8 +104,9 @@ ul {
 #coffee {
     max-height: 300px;
     grid-area: "coffee";
-    padding-right: 100px;
+    margin-right: 70px;
     margin-top: 30px;
+    box-shadow: 1px 1px 5px #e73d2c;
 }
 
 #caseStudy3 {
@@ -125,8 +117,8 @@ ul {
     "van" "case3";
     grid-gap: 30px;
     background-color: #F6C8C9;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -134,8 +126,9 @@ ul {
 #van {
     max-height: 300px;
     grid-area: "van";
-    padding-left: 100px;
+    margin-left: 70px;
     margin-top: 30px;
+    box-shadow: 1px 1px 5px #e73d2c;
 }
 
 #case3 {
@@ -157,6 +150,7 @@ ul {
     font-size: 13pt;
     height: 30px;
     width: 150px;
+    box-shadow: 1px 1px 5px lightseagreen;
     transition-duration: 0.2s;
 }
 
@@ -166,3 +160,6 @@ ul {
     color: #EAE5DF;
 }
 
+@media {
+
+}
