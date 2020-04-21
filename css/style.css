@@ -1,22 +1,33 @@
+html {
+    background-color: #EAE5DF;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive, serif;
+    color: #01989E;
+    font-size: 35pt;
+    padding-left: 30px;
+}
+
 .mySkills {
     display: grid;
     background-color: #F6C8C9;
-    grid-auto-columns: 100%;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-auto-columns: 1fr
+    grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas: 
     "myUxTools"
     "skillsGrid"
-    "toolList";
+    "toolList"
+    ;
 }
 
 #myUxTools {
     grid-area: myUxTools;
 }
 
-#skillsGrid {
+.skillsGrid {
     grid-area: skillsGrid;
-    width: 100%;
-    justify-self: center;
+    text-align: center;
 }
 
 #toolList {
@@ -34,6 +45,123 @@ ul {
   li {
     float: left;
     padding-right: 7px;
+    padding-bottom: 30px;
     font-family: 'Aleo', sans-serif;
     color: #01989E;
+  }
 
+#mySkillsPic {
+    max-width: 800px;
+    padding-bottom: 30px;
+    margin-top: -30px;
+}
+
+#caseStudy1 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "kitten" "case1";
+    grid-gap: 30px;
+    background-color: #F6C8C9;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#kitten {
+    max-height: 300px;
+    grid-area: "kitten";
+    padding-left: 100px;
+    margin-top: 30px;
+}
+
+#case1 {
+    grid-area: "case1";
+    padding-top: 75px;
+    justify-self: center;
+    font-family: 'Shrikhand', cursive, serif;
+    font-size: 16pt;
+    letter-spacing: 1px;
+    color: #01989E;
+}
+
+#caseStudy2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 
+    "case2" "coffee";
+    grid-gap: 30px;
+    background-color: #F6C8C9;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#case2 {
+    grid-area: "case2";
+    padding-top: 75px;
+    text-align: center;
+    font-family: 'Shrikhand', cursive, serif;
+    font-size: 16pt;
+    letter-spacing: 1px;
+    color: #01989E;
+}
+
+#coffee {
+    max-height: 300px;
+    grid-area: "coffee";
+    padding-right: 100px;
+    margin-top: 30px;
+}
+
+#caseStudy3 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "van" "case3";
+    grid-gap: 30px;
+    background-color: #F6C8C9;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#van {
+    max-height: 300px;
+    grid-area: "van";
+    padding-left: 100px;
+    margin-top: 30px;
+}
+
+#case3 {
+    grid-area: "case3";
+    padding-top: 75px;
+    text-align: center;
+    font-family: 'Shrikhand', cursive, serif;
+    font-size: 16pt;
+    letter-spacing: 1px;
+    color: #01989E;
+}
+
+.viewProject {
+    background-color: #EAE5DF;
+    border: 2px solid #EAE5DF;
+    font-family: 'Aleo', sans-serif;
+    color: #01989E;
+    font-weight: bold;
+    font-size: 13pt;
+    height: 30px;
+    width: 150px;
+    transition-duration: 0.2s;
+}
+
+.viewProject:hover {
+    background-color: #01989E;
+    border: 2px solid #01989E;
+    color: #EAE5DF;
+}
