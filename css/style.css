@@ -160,20 +160,15 @@ ul {
     color: #EAE5DF;
 }
 
-@media (min-width: 400px) {
+@media screen and (max-width: 600px) {
     h1 {
         font-family: 'Shrikhand', cursive, serif;
         color: #01989E;
         font-size: 14pt;
-        padding-left: 0px;
-    }
-    #myUxTools {
-    
+        padding-left: 10px;
     }
     
     .mySkills {
-        display: flex;
-        flex-direction: column;
         background-color: #F6C8C9;
     }
     
@@ -182,22 +177,154 @@ ul {
     }
     
     ul {
-        list-style-type: none;
-        margin: 0;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
         text-align: left;
+        padding-left: 10px;
+        font-size: 8pt;
       }
       
       li {
         font-family: 'Aleo', sans-serif;
         color: #01989E;
+        padding-bottom: 0px;
       }
     
     #mySkillsPic {
-        max-width: 260px;
+        max-width: 350px;
         margin-bottom: 10px;
         margin-top: -10px;
+        margin-left: 10px;
         padding-bottom: 8px;
-        border: 5px solid #E73D2C;
+        border: 3px solid #E73D2C;
         text-align: left;
+    }
+
+    #caseStudy1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "case1" 
+        "kitten";
+        grid-gap: 0px;
+        background-color: #F6C8C9;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        text-align: left;
+        max-height: 500px;
+        max-width: 400px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    #kitten {
+        max-width: 95%;
+        grid-area: "kitten";
+        overflow: hidden;
+        margin-left: 5px;
+        margin-top: 10px;
+        box-shadow: .4px .4px 1px #e73d2c;
+    }
+    
+    #case1 {
+        grid-area: "case1";
+        padding-top: 1px;
+        margin-left: 5px;
+        font-family: 'Shrikhand', cursive, serif;
+        font-size: 8pt;
+        letter-spacing: 1px;
+        color: #01989E;
+    }
+    
+    #caseStudy2 {
+        display: flex;
+        flex-direction: column;
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "coffee" 
+        "case2";
+        grid-gap: 0px; */
+        background-color: #F6C8C9;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        text-align: left;
+        max-height: 500px;
+        max-width: 400px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    #coffee {
+        max-height: 155px;
+        grid-area: "coffee";
+        overflow: hidden;
+        margin-left: 5px;
+        margin-top: 10px;
+        box-shadow: .4px .4px 1px #e73d2c;
+    }
+
+    #case2 {
+        grid-area: "case2";
+        padding-top: 1px;
+        margin-left: 0px;
+        font-family: 'Shrikhand', cursive, serif;
+        font-size: 8pt;
+        letter-spacing: 1px;
+        color: #01989E;
+    }
+    
+    #caseStudy3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "van" "case3";
+        grid-gap: 0px;
+        background-color: #F6C8C9;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        text-align: left;
+        max-height: 500px;
+        max-width: 400px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    #van {
+        max-height: 155px;
+        grid-area: "van";
+        margin-left: 5px;
+        margin-top: 10px;
+        box-shadow: .4px .4px 1px #e73d2c;
+    }
+    
+    #case3 {
+        grid-area: "case3";
+        padding-top: 1px;
+        margin-left: 0px;
+        font-family: 'Shrikhand', cursive, serif;
+        font-size: 8pt;
+        letter-spacing: 1px;
+        color: #01989E;
+    }
+    
+    .viewProject {
+        background-color: #EAE5DF;
+        border: 2px solid #EAE5DF;
+        font-family: 'Aleo', sans-serif;
+        color: #01989E;
+        font-weight: bold;
+        font-size: 9pt;
+        text-align: center;
+        height: 20px;
+        width: 100px;
+        box-shadow: 1px 1px 5px lightseagreen;
+        margin-left: 5px;
+    }
 }
